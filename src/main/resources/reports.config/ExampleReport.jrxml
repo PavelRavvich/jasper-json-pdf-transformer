@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.20.6.final using JasperReports Library version 6.20.6-5c96b6aa8a39ac1dc6b6bea4b81168e16dd39231  -->
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="SimpleTable" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="5acd41d7-c832-4c11-b633-fcff9fafe3d2">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd"
+              name="SimpleTable" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20"
+              topMargin="20" bottomMargin="20" uuid="5acd41d7-c832-4c11-b633-fcff9fafe3d2">
     <parameter name="companyName" class="java.lang.String"/>
     <parameter name="companyUrl" class="java.lang.String"/>
     <field name="name" class="java.lang.String"/>
@@ -69,7 +73,7 @@
     <detail>
         <band height="21">
             <textField textAdjust="StretchHeight">
-                <reportElement x="6" y="-1" width="89" height="20"
+                <reportElement x="6" y="-1" width="89" height="21"
                                positionType="Float"
                                stretchType="RelativeToTallestObject"
                                uuid="c8a41c95-172f-4e04-9647-79e1d51a9491"/>
@@ -124,25 +128,8 @@
                                uuid="8668e57c-90a0-4302-ba64-222c67c88d76"/>
             </line>
             <line>
-                <reportElement x="0" y="0" width="1" height="20"
-                               positionType="Float"
-                               stretchType="RelativeToTallestObject"
-                               uuid="0128e980-1cb6-4317-a626-b704365a529f"/>
-            </line>
-            <line>
-                <reportElement x="554" y="0" width="1" height="20"
-                               positionType="Float"
-                               stretchType="RelativeToTallestObject"
-                               uuid="caccb880-c8fe-449a-b786-042266fac25c"/>
-            </line>
-            <line>
                 <reportElement x="0" y="-1" width="555" height="1" uuid="6c53ebcd-470c-4215-80f0-60f9cadff647"/>
             </line>
-<!--            <line>-->
-<!--                <reportElement x="0" y="20" width="555" height="1"-->
-<!--                               isPrintWhenDetailOverflows="true"-->
-<!--                               uuid="f4598efd-5ba9-42cf-b777-65202af67376"/>-->
-<!--            </line>-->
         </band>
     </detail>
     <pageFooter>

@@ -10,13 +10,13 @@ import jakarta.ws.rs.core.MediaType
 import jakarta.ws.rs.core.Response
 
 @ApplicationScoped
-@Path("/app")
+@Path("/api/v1/report")
 class ReportController(
     private val reportService: ReportService
 ) {
 
     @POST
-    @Path("/report")
+    @Path("/generate")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces("application/pdf")
     fun generateReport(@Valid reportDto: ReportDto): Response {

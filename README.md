@@ -56,3 +56,86 @@ If you want to learn more about building native executables, please consult http
 Easily start your RESTful Web Services
 
 [Related guide section...](https://quarkus.io/guides/getting-started#the-jax-rs-resources)
+
+For test
+
+**POST** `http://localhost:8080/api/v1/report/generate`
+
+```json
+{
+  "companyName": "Company",
+  "companyUrl": "www.company.com",
+  "rows": [
+    {
+      "name": "John Smith",
+      "age": "40",
+      "gender": "Male",
+      "phone": "321-654-9870",
+      "birthday": "1983-11-10"
+    },
+    {
+      "name": "Emily Brown",
+      "age": "29",
+      "gender": "Female",
+      "phone": "456-789-1230",
+      "birthday": "1994-05-21"
+    },
+    {
+      "name": "Alice Johnson",
+      "age": "35",
+      "gender": "Female",
+      "phone": "567-890-1234",
+      "birthday": "1988-09-15"
+    },
+    {
+      "name": "Bob Williams",
+      "age": "50",
+      "gender": "Male",
+      "phone": "678-901-2345",
+      "birthday": "1973-04-03"
+    },
+    {
+      "name": "Charlie Davis",
+      "age": "22",
+      "gender": "Male",
+      "phone": "789-012-3456",
+      "birthday": "2001-12-25"
+    },
+    {
+      "name": "Diana Miller",
+      "age": "27",
+      "gender": "Female",
+      "phone": "890-123-4567",
+      "birthday": "1996-02-18"
+    },
+    {
+      "name": "Ethan Wilson",
+      "age": "32",
+      "gender": "Male",
+      "phone": "901-234-5678",
+      "birthday": "1991-08-09"
+    },
+    {
+      "name": "Fiona Anderson",
+      "age": "21",
+      "gender": "Female",
+      "phone": "012-345-6789",
+      "birthday": "2002-10-01"
+    },
+    {
+      "name": "George Thomas",
+      "age": "45",
+      "gender": "Male",
+      "phone": "123-789-0456",
+      "birthday": "1978-06-30"
+    },
+    {
+      "name": "Helen Taylor",
+      "age": "60",
+      "gender": "Female",
+      "phone": "234-890-1567",
+      "birthday": "1963-01-05"
+    }
+  ]
+}
+```
