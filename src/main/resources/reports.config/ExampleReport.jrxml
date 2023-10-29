@@ -104,47 +104,70 @@
             </textField>
 
             <line>
-                <reportElement x="99" y="0" width="1" height="20"
+                <reportElement x="0" y="0" width="1" height="21"
                                positionType="Float"
-                               stretchType="RelativeToTallestObject"
+                               stretchType="ContainerHeight"
+                               uuid="0128e980-1cb6-4317-a626-b704365a529f"/>
+            </line>
+            <line>
+                <reportElement x="554" y="0" width="1" height="21"
+                               positionType="Float"
+                               stretchType="ContainerHeight"
+                               uuid="caccb880-c8fe-449a-b786-042266fac25c"/>
+            </line>
+            <line>
+                <reportElement x="99" y="0" width="1" height="21"
+                               positionType="Float"
+                               stretchType="ContainerHeight"
                                uuid="8668e57c-90a0-4302-ba64-462c74c88d76"/>
             </line>
             <line>
-                <reportElement x="200" y="0" width="1" height="20"
+                <reportElement x="200" y="0" width="1" height="21"
                                positionType="Float"
-                               stretchType="RelativeToTallestObject"
+                               stretchType="ContainerHeight"
                                uuid="8668e57c-90a0-4302-ba64-462c67c88d13"/>
             </line>
             <line>
-                <reportElement x="300" y="0" width="1" height="20"
+                <reportElement x="300" y="0" width="1" height="21"
                                positionType="Float"
-                               stretchType="RelativeToTallestObject"
+                               stretchType="ContainerHeight"
                                uuid="8668e57c-90a0-4302-ba96-462c67c88d76"/>
             </line>
             <line>
-                <reportElement x="388" y="0" width="1" height="20"
+                <reportElement x="388" y="0" width="1" height="21"
                                positionType="Float"
-                               stretchType="RelativeToTallestObject"
+                               stretchType="ContainerHeight"
                                uuid="8668e57c-90a0-4302-ba64-222c67c88d76"/>
             </line>
             <line>
                 <reportElement x="0" y="-1" width="555" height="1" uuid="6c53ebcd-470c-4215-80f0-60f9cadff647"/>
             </line>
         </band>
+        <band height="1">
+            <line>
+                <reportElement x="0" y="0" width="555" height="1" uuid="6c53ebcd-470c-3215-80f0-60f9cadff647">
+                    <printWhenExpression>
+                        <![CDATA[new Boolean($V{PAGE_COUNT}.intValue() != $V{PAGE_NUMBER}.intValue()
+                        || $V{REPORT_COUNT}.intValue() == $V{COLUMN_COUNT}.intValue())]]>
+                    </printWhenExpression>
+                </reportElement>
+            </line>
+        </band>
     </detail>
+
     <pageFooter>
-        <band height="20">
+        <band height="25">
             <property name="com.jaspersoft.studio.unit.height" value="px"/>
             <textField>
-                <reportElement x="497" y="0" width="50" height="20" uuid="6b24d7e9-c8ca-4828-a0ee-4deb9501a739"/>
+                <reportElement x="497" y="5" width="50" height="20" uuid="6b24d7e9-c8ca-4828-a0ee-4deb9501a739"/>
                 <textFieldExpression><![CDATA["Page " + $V{PAGE_NUMBER} + " of"]]></textFieldExpression>
             </textField>
             <textField evaluationTime="Report">
-                <reportElement x="548" y="0" width="44" height="20" uuid="489f57dd-1f82-4b28-96b9-5ae75f99977b"/>
+                <reportElement x="548" y="5" width="44" height="20" uuid="489f57dd-1f82-4b28-96b9-5ae75f99977b"/>
                 <textFieldExpression><![CDATA["" + $V{PAGE_NUMBER}]]></textFieldExpression>
             </textField>
             <textField pattern="MMMMM dd, yyyy">
-                <reportElement x="1" y="0" width="100" height="20" uuid="395162a0-e464-4138-b9a4-7128752d7306"/>
+                <reportElement x="1" y="5" width="100" height="20" uuid="395162a0-e464-4138-b9a4-7128752d7306"/>
                 <textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
             </textField>
         </band>
